@@ -14,31 +14,34 @@ The result: **production-quality apps from a 2-sentence prompt.**
 
 ## Install in 30 Seconds
 
-**Option 1: Via Marketplace (recommended)**
+**Step 1:** Add the marketplace
 ```
-/plugin marketplace add vamgan/claude-plugin-marketplace
-/plugin install claude-harness-builder@vamgan-plugins
+/plugin marketplace add https://github.com/vamgan/claude-harness-builder.git
 ```
 
-**Option 2: Direct**
+**Step 2:** Install the plugin
+```
+/plugin install claude-harness-builder@claude-harness-builder-dev
+```
+
+That's it. Or load directly for testing:
 ```bash
-git clone https://github.com/vamgan/claude-harness-builder.git
-claude --plugin-dir ./claude-harness-builder
+claude --plugin-dir /path/to/claude-harness-builder
 ```
 
-**Option 3: For your whole team** — drop this in `.claude/settings.json`:
+**For your whole team** — drop this in `.claude/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "vamgan-plugins": {
+    "claude-harness-builder-dev": {
       "source": {
-        "source": "github",
-        "repo": "vamgan/claude-plugin-marketplace"
+        "source": "url",
+        "url": "https://github.com/vamgan/claude-harness-builder.git"
       }
     }
   },
   "enabledPlugins": {
-    "claude-harness-builder@vamgan-plugins": true
+    "claude-harness-builder@claude-harness-builder-dev": true
   }
 }
 ```
