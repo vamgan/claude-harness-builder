@@ -1,4 +1,7 @@
 .harness/
+.worktrees/
+.claude/
+.private-journal/
 node_modules/
 .DS_Store
 *.pyc

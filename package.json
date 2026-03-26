@@ -1,0 +1,10 @@
+{
+  "name": "claude-harness-builder",
+  "version": "1.0.0",
+  "description": "GAN-inspired multi-agent harness for building complete applications from brief prompts with independent quality evaluation",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vamgan/claude-harness-builder.git"
+  }
+}

@@ -5,6 +5,17 @@
   "author": {
     "name": "vamgan"
   },
+  "homepage": "https://github.com/vamgan/claude-harness-builder",
   "repository": "https://github.com/vamgan/claude-harness-builder",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "harness",
+    "multi-agent",
+    "quality",
+    "evaluation",
+    "build",
+    "sprint-contracts",
+    "gan-inspired",
+    "code-generation"
+  ]
 }
